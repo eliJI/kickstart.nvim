@@ -568,6 +568,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
+        jdtls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -627,7 +628,7 @@ require('lazy').setup({
     end,
   },
 
-  { -- Autoformat
+  --[[{ -- Autoformat
     'stevearc/conform.nvim',
     lazy = false,
     keys = {
@@ -662,7 +663,7 @@ require('lazy').setup({
         -- javascript = { { "prettierd", "prettier" } },
       },
     },
-  },
+  },--]]
 
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -773,7 +774,7 @@ require('lazy').setup({
         },
       }
     end,
-  },
+  }, --]]
 
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
